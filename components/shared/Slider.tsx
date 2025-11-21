@@ -76,8 +76,9 @@ export const Slider = ({ lang }: { lang: string }) => {
                 {item.image.includes(".mp4") ? (
                   <video
                     src={item.image}
-                    className="size-full object-cover"
+                    className="size-full object-contain"
                     autoPlay
+                    muted
                   />
                 ) : (
                   <Image
