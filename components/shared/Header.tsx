@@ -10,7 +10,7 @@ import logo from "@/public/assets/icons/logo.svg";
 import search from "@/public/assets/icons/header/search.svg";
 import searchMob from "@/public/assets/icons/header/mob-search.svg";
 
-import { LangMenu } from "../ui/lang-menu";
+import { LangMenu } from "../ui/LangMenu";
 import { SearchInput } from "./search-input";
 import { headerMenu2 } from "@/lib/database/pathnames";
 import { BurgerMenu } from "../ui/burger-menu";
