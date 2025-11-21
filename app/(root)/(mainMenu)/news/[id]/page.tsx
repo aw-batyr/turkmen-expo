@@ -11,7 +11,7 @@ import { baseAPI } from "@/lib/API";
 import { NewsPageType } from "@/lib/types/NewsPage.type";
 import Link from "next/link";
 import { BreadCrumbs } from "@/components/ui/bread-crumbs";
-import { Title } from "@/components/ui/Title";
+import { Title } from "@/components/ui/title";
 import Loader from "@/components/ui/Loader";
 
 export default function SingleNewsPage({ params }: { params: { id: string } }) {
