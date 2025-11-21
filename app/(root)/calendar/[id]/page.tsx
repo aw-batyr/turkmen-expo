@@ -15,7 +15,7 @@ export default async function EventPage({
   const data = await getEventPage(id, lang);
 
   return (
-    <div className="flex flex-col container gap-20 pt-16 section-mb">
+    <div className="flex flex-col container gap-20 pt-32 section-mb">
       <h1 className="md:text-[48px] text-[28px] text-ON_SURFACE leading-[115%] font-medium">
         {data?.title ? data?.title : null}
       </h1>
