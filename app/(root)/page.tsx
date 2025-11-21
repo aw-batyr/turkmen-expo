@@ -1,8 +1,8 @@
 import { Events } from "@/components/shared/Events";
 import { News } from "@/components/shared/News";
 import { Partners } from "@/components/shared/Partners";
+import { Reviews } from "@/components/shared/Reviews";
 import { Slider } from "@/components/shared/Slider";
-import { Video } from "@/components/shared/Video";
 import Loader from "@/components/ui/Loader";
 import { cookies } from "next/headers";
 import { Suspense } from "react";
@@ -18,6 +18,7 @@ export default async function HomePage() {
         <Events lang={lang} />
       </Suspense>
       <News />
+      <Reviews />
       {/* <Video /> */}
       <Partners />
     </div>
