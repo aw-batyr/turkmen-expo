@@ -59,7 +59,7 @@ export const Slider = ({ lang }: { lang: string }) => {
       <Swiper
         modules={[Autoplay, Pagination]}
         loop
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 5000 }}
         speed={5000}
         slidesPerView={1}
         slidesPerGroup={1}
@@ -73,14 +73,22 @@ export const Slider = ({ lang }: { lang: string }) => {
                 target="_blank"
                 className="size-full"
               >
-                <Image
-                  ref={imgRef}
-                  height={600}
-                  width={1920}
-                  src={item?.image}
-                  alt={item?.title}
-                  className="object-contain size-full"
-                />
+                {item.image.includes(".mp4") ? (
+                  <video
+                    src={item.image}
+                    className="size-full object-cover"
+                    autoPlay
+                  />
+                ) : (
+                  <Image
+                    ref={imgRef}
+                    height={600}
+                    width={1920}
+                    src={item?.image}
+                    alt={item?.title}
+                    className="object-contain size-full"
+                  />
+                )}
               </Link>
             </SwiperSlide>
           ))}

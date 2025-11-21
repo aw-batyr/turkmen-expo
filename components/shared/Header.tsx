@@ -18,7 +18,6 @@ import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { selectHeader, setShowInput } from "@/redux/slices/headerSlice";
 import { selectBurger, setBurgerOpen } from "@/redux/slices/burgerSlice";
 import { useStorage } from "@/hooks/useStorage";
-import { usePathname, useRouter } from "next/navigation";
 
 export const Header = () => {
   const dispatch = useAppDispatch();
@@ -26,7 +25,6 @@ export const Header = () => {
   const { burgerOpen } = useAppSelector(selectBurger);
   const { activeLang } = useAppSelector(selectHeader);
   const [activeLink, setActiveLink] = useState("");
-  const pathname = usePathname();
 
   const toggleMenu = () => {
     dispatch(setBurgerOpen(!burgerOpen));
