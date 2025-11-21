@@ -1,4 +1,4 @@
-import { LayoutWithSidebar } from "@/components/page/layout-with-sidebar";
+import { LayoutWithSidebar } from "@/components/page/LayoutWithSidebar";
 import { getAbout } from "@/services/about";
 import { cookies } from "next/headers";
 

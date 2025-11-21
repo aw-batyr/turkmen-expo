@@ -20,7 +20,7 @@ import "swiper/css/scrollbar";
 import Link from "next/link";
 import { useLang } from "@/utils/useLang";
 import { GreenBtn } from "../ui/Buttons";
-import { Title } from "../ui/title";
+import { Title } from "../ui/Title";
 import Loader from "@/components/ui/Loader";
 
 export const News = () => {

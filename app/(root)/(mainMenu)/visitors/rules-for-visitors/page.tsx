@@ -1,6 +1,6 @@
 "use client";
 
-import { LayoutWithSidebar } from "@/components/page/layout-with-sidebar";
+import { LayoutWithSidebar } from "@/components/page/LayoutWithSidebar";
 import { baseAPI } from "@/lib/API";
 import { useAppSelector } from "@/redux/hooks";
 import { selectHeader } from "@/redux/slices/headerSlice";
