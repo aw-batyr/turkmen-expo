@@ -3,7 +3,7 @@ import React from "react";
 
 const CompanyLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="lg:bg-blueBg bg-transparent">
+    <div className="lg:bg-blueBg bg-transparent pt-12">
       <div className="container">
         <div className="flex w-full">
           <aside className="w-[25%] hidden tab:block">

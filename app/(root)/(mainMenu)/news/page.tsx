@@ -12,7 +12,7 @@ import clsx from "clsx";
 import { Card } from "@/components/shared/Card";
 import { BorderBtn } from "@/components/ui/Buttons";
 import { Pagination } from "@/components/ui/Pagination";
-import { LayoutWithSidebar } from "@/components/page/layout-with-sidebar";
+import { LayoutWithSidebar } from "@/components/page/LayoutWithSidebar";
 
 const News = () => {
   const { activeLang } = useAppSelector(selectHeader);

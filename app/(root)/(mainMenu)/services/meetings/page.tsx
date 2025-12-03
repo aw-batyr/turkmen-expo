@@ -1,4 +1,4 @@
-import { LayoutWithSidebar } from "@/components/page/layout-with-sidebar";
+import { LayoutWithSidebar } from "@/components/page/LayoutWithSidebar";
 import { getServices } from "@/services/services";
 
 export default async function MeetingsPage() {

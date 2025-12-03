@@ -10,7 +10,7 @@ import logo from "@/public/assets/icons/logo.svg";
 import search from "@/public/assets/icons/header/search.svg";
 import searchMob from "@/public/assets/icons/header/mob-search.svg";
 
-import { LangMenu } from "../ui/lang-menu";
+import { LangMenu } from "../ui/LangMenu";
 import { SearchInput } from "./search-input";
 import { headerMenu2 } from "@/lib/database/pathnames";
 import { BurgerMenu } from "../ui/burger-menu";
@@ -18,7 +18,6 @@ import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { selectHeader, setShowInput } from "@/redux/slices/headerSlice";
 import { selectBurger, setBurgerOpen } from "@/redux/slices/burgerSlice";
 import { useStorage } from "@/hooks/useStorage";
-import { usePathname, useRouter } from "next/navigation";
 
 export const Header = () => {
   const dispatch = useAppDispatch();
@@ -26,7 +25,6 @@ export const Header = () => {
   const { burgerOpen } = useAppSelector(selectBurger);
   const { activeLang } = useAppSelector(selectHeader);
   const [activeLink, setActiveLink] = useState("");
-  const pathname = usePathname();
 
   const toggleMenu = () => {
     dispatch(setBurgerOpen(!burgerOpen));

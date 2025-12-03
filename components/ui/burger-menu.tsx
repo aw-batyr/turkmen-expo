@@ -11,7 +11,7 @@ import { activeLangType, setActiveLang } from "@/redux/slices/headerSlice";
 import clsx from "clsx";
 import { burgerMenu, burgerMenu2 } from "@/lib/database/header";
 import { useRouter } from "next/navigation";
-import { lang } from "./lang-menu";
+import { lang } from "./LangMenu";
 
 interface flagTypes {
   // title: 'Ру' | 'En' | 'Tm';

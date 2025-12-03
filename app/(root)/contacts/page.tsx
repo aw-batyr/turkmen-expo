@@ -8,7 +8,7 @@ export default async function ContactsPage() {
   const lang = cookies().get("lang")?.value;
 
   return (
-    <main className="bg-blueBg h-full w-full">
+    <main className="bg-blueBg h-full w-full pt-12">
       <div className="container flex flex-col items-start">
         <div className="mt-5">
           <BreadCrumbs second={lang === "ru" ? "Контакты" : "Contacts"} />

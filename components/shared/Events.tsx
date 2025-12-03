@@ -22,7 +22,7 @@ const events = [
 ];
 
 export const Events = async ({ lang }: { lang: string }) => {
-  const data = await getEvents(lang);
+  // const data = await getEvents(lang);
 
   const btnText =
     lang === "en" ? "Show more" : lang === "ru" ? "Показать еще" : "Show more";
@@ -37,7 +37,7 @@ export const Events = async ({ lang }: { lang: string }) => {
         <div className="sm:mb-10">
           <h2 className="text-center font-semibold text-3xl mb-8">
             {title} <span className="text-PRIMARY">Turkmen</span>
-            <span className="text-red">Expo</span>
+            <span className="text-red">Expo 2025</span>
           </h2>
           {/* <Title
             text={
