@@ -1,18 +1,20 @@
 import { getEvents } from "@/services/home";
-import { EventsMobile } from "./events-mobile";
 
 const events = [
   {
+    link: "https://kids.turkmenexpo.com/",
     video:
       "https://editor.turkmenexpo.com/storage/app/media/video/KidsExpo%202024_%20Turkmenistan.mp4",
     logo: "https://kids.turkmenexpo.com/logo.svg",
   },
   {
+    link: "https://turkmentextile.turkmenexpo.com/",
     video:
       "https://turkmentextile.turkmenexpo.com/app/storage/app/media/video/Textile2025.mp4",
     logo: "/assets/icons/turkmen-textile.png",
   },
   {
+    link: "https://itse.turkmenexpo.com/",
     video:
       "https://itse.turkmenexpo.com/app/storage/app/media/video/itse2025.mp4",
     logo: "https://itse.turkmenexpo.com/logo.svg",
@@ -81,7 +83,7 @@ export const Events = async ({ lang }: { lang: string }) => {
                   className="h-10 w-auto object-cover"
                 />
                 <a
-                  href={events[0].logo.slice(0, -8)}
+                  href={events[i].link}
                   target="_blank"
                   className="text-PRIMARY underline"
                 >
