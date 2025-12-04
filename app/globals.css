@@ -386,6 +386,15 @@ p img {
     transform: translate(-50%, -50%) scale(1);
   }
 
+  /* Stretch swiper slides to equal height */
+  .testimonials-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .testimonials-swiper .swiper-slide {
+    height: auto;
+  }
+
   .autoplay-progress {
     z-index: 10;
     width: 63px;

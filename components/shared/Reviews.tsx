@@ -67,7 +67,7 @@ export const Reviews = () => {
 
                 <p className="text-sm text-[#171C1B]">{item?.text}</p>
 
-                <div className="flex flex-col gap-5 items-center absolute left-1/2 -translate-x-1/2 -bottom-20">
+                <div className="flex flex-col gap-5 items-center absolute left-1/2 -translate-x-1/2 top-[82%]">
                   <div className="flex justify-center items-center overflow-hidden rounded-full border-4 border-PRIMARY size-[70px]">
                     <Image
                       src={item?.image?.path ?? ""}
@@ -88,7 +88,7 @@ export const Reviews = () => {
         </Swiper>
 
         {/* Кастомная пагинация */}
-        <div className="custom-pagination flex justify-center items-center mt-32"></div>
+        <div className="custom-pagination flex justify-center items-center mt-60"></div>
       </div>
     </section>
   );
